@@ -48,13 +48,12 @@ The script produces three heatmaps:
 
 These help visualize how masking changes attention distributions.
 
-# This code will:
-# - define transpose, matmul, softmax (pure Python lists)
-# - compute attention scores = Q K^T / sqrt(d_k)
-# - apply softmax to get weights
-# - multiply weights by V to get outputs
-# - apply two masks: causal mask and padding mask, and show how results change
-# - visualize attention weights as heatmaps using matplotlib
+## Educational Use
+
+This example is designed for clarity, not speed. It’s ideal for:
+- Classroom demonstrations
+- Step-by-step debugging
+- Comparing with NumPy or PyTorch implementations
 
 ## License
 
