@@ -240,4 +240,10 @@ axes[0].set_title("Unmasked"); axes[0].imshow(attn_unmasked); axes[0].set_xlabel
 axes[1].set_title("Causal Masked"); axes[1].imshow(attn_causal); axes[1].set_xlabel("Key positions (j)"); axes[1].set_ylabel("Query positions (i)")
 axes[2].set_title("Padding Masked (pos 1)"); axes[2].imshow(attn_padding); axes[2].set_xlabel("Key positions (j)"); axes[2].set_ylabel("Query positions (i)")
 plt.tight_layout()
+
+# save the image
+output_path = "attention_heatmaps.png"
+plt.savefig(output_path, dpi=300, bbox_inches="tight")
+print(f"Saved attention heatmap figure to {output_path}")
+
 plt.show()
